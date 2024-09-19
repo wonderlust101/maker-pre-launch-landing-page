@@ -1,0 +1,19 @@
+@use '../../../assets/styles/abstract' as a;
+
+.header {
+  &__content {
+    grid-area: 1/2;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 4rem;
+
+    @include a.breakpoint(medium) {
+      justify-content: flex-start;
+      padding: 3rem 0 5rem;
+    }
+  }
+
+  &__logo {
+    width: 7.5rem;
+  }
+}

@@ -1,0 +1,66 @@
+@use  '../../../assets/styles/abstract' as a;
+
+.hero {
+  grid-area: 1/1 / 1/4;
+  display: grid;
+  grid-template: 
+      'hero-left hero-right'
+      'hero-text hero-text';
+  justify-content: center;
+  row-gap: 3rem;
+  overflow: hidden;
+  
+  @include a.breakpoint(medium) {
+    grid-template: 'hero-left hero-text hero-right' / 1fr 60% 1fr;
+    position: relative;
+  }
+
+  &__image {
+    &--left {
+      grid-area: hero-left;
+      justify-self: flex-end;
+      
+      @include a.breakpoint(medium) {
+        max-width: unset;
+        justify-self: flex-start;
+      }
+    }
+    
+    &--right {
+      grid-area: hero-right;
+      justify-self: flex-start;
+
+      @include a.breakpoint(medium) {
+        max-width: unset;
+        justify-self: flex-end;
+      }
+    }
+  }
+  
+  &__main-section {
+    grid-area: hero-text;
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+    color: white;
+    text-align: center;
+    
+    @include a.breakpoint(medium) {
+      align-content: center;
+      justify-self: center;
+      background: url('/images/bg-hero-squiggle.svg') no-repeat center;
+      background-size: contain;
+      width: 70%;
+    }
+  }
+  
+  &__text {
+    display: grid;
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+    
+    &--highlight {
+      color: a.$clr-primary-color-cyan;
+    }
+  }
+}

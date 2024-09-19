@@ -1,0 +1,22 @@
+[
+  {
+    "header": "Dip your toe",
+    "body": "Just getting started? No problem at all! Our free plan will take you a long way.",
+    "icon": "./images/icon-free.svg",
+    "cost": 0,
+    "feature1": "Unlimited products",
+    "feature2": "Basic analytics",
+    "feature3": "Limited marketplace exposure",
+    "feature4": "10% fee per transaction"
+  },
+  {
+    "header": "Dive right in",
+    "body": "Ready for the big time? Our paid plan will help you take your business to the next level.",
+    "icon": "./images/icon-paid.svg",
+    "cost": 25.00,
+    "feature1": "Custom domain",
+    "feature2": "Advanced analytics and reports",
+    "feature3": "High marketplace visibility",
+    "feature4": "5% fee per transaction"
+  }
+]

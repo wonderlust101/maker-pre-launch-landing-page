@@ -1,0 +1,76 @@
+@use '../../../assets/styles/abstract' as a;
+
+.features {
+  grid-area: 2/2;
+  display: grid;
+  color: white;
+  justify-content: center;
+
+  &__grid {
+    display: grid;
+    justify-items: center;
+    gap: 3.5rem;
+    width: 100%;
+
+    @include a.breakpoint(large) {
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 90rem;
+    }
+  }
+
+  &__feature {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+    text-align: center;
+
+    @include a.breakpoint(medium) {
+      display: flex;
+      gap: 4rem;
+      text-align: left;
+      align-items: center;
+      max-width: 35rem;
+    }
+
+    @include a.breakpoint(large) {
+      display: grid;
+      gap: 3rem;
+      align-items: flex-start;
+    }
+
+    &:nth-child(2n - 1) {
+      @include a.breakpoint(medium) {
+        justify-self: flex-end;
+      }
+    }
+
+    &:nth-child(2n) {
+      @include a.breakpoint(medium) {
+        justify-self: flex-start;
+      }
+
+      @include a.breakpoint(large) {
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  &__icon {
+    background-color: a.$clr-primary-color-blue-500;
+    width: 7.5rem;
+    height: 7.75rem;
+    padding: 2rem;
+    border-radius: 3rem;
+    object-fit: contain;
+
+    @include a.breakpoint(large) {
+      width: 10rem;
+      height: 10.25rem;
+    }
+  }
+
+  &__feature-text {
+    display: grid;
+    gap: 0.75rem;
+  }
+}

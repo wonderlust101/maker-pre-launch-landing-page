@@ -1,0 +1,22 @@
+[
+  {
+    "header": "Indulge your passions",
+    "body": "Your passions shouldn't be just for the weekend. Earn a living doing what you love.",
+    "icon": "./images/illustration-passions.svg"
+  },
+  {
+    "header": "Gain financial freedom",
+    "body": "Start making money work for you. There’s nothing quite like earning while you sleep.",
+    "icon": "./images/illustration-financial-freedom.svg"
+  },
+  {
+    "header": "Choose your lifestyle",
+    "body": "Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week.",
+    "icon": "./images/illustration-lifestyle.svg"
+  },
+  {
+    "header": "Work from anywhere",
+    "body": "Selling online means not being pinned down. Want to work AND travel? Go for it!",
+    "icon": "./images/illustration-work-anywhere.svg"
+  }
+]

@@ -1,0 +1,80 @@
+@use '../../../assets/styles/abstract' as a;
+
+.pricing {
+  grid-area: 3/2;
+  display: grid;
+  gap: 3.5rem;
+  color: white;
+
+  &__header-text {
+    display: grid;
+    gap: 1.75rem;
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    row-gap: 2.25rem;
+    justify-items: center;
+    
+    @include a.breakpoint(large) {
+      grid-template-columns: max-content max-content;
+      justify-content: center;
+      column-gap: 4rem;
+    }
+  }
+
+  &__grid-container {
+    display: grid;
+    gap: 2rem;
+    position: relative;
+    width: 80%;
+    margin-top: 2rem;
+    padding: 3.5rem 2rem 2rem;
+    border-radius: 0.5rem;
+    
+    @include a.breakpoint(large) {
+      width: 28rem;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: 2rem;
+    transform: translate(0, -50%);
+  }
+
+  &__price-text {
+    display: grid;
+    gap: 1rem;
+  }
+
+  &__features {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  &__cost {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  &__cost-flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__features-list {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

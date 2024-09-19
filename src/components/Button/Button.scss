@@ -1,0 +1,13 @@
+@use  '../../assets/styles/abstract' as a;
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  color: a.$clr-primary-color-blue-900;
+  background-color: a.$clr-primary-color-cyan;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
