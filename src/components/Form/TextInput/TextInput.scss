@@ -11,7 +11,7 @@
     font-weight: 700;
     color: a.$clr-neutrals-white;
     background-color: a.$clr-primary-color-blue-500;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     border: 2px solid transparent;
     outline: none !important;
     
@@ -38,7 +38,6 @@
   }
 
   &__status {
-    //display: none;
     text-align: left;
     font-size: 0.75rem;
     color: a.$clr-errors;

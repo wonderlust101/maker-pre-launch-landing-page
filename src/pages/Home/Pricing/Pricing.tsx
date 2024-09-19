@@ -7,10 +7,7 @@ type plan = {
     body: string;
     icon: string;
     cost: number;
-    feature1: string;
-    feature2: string;
-    feature3: string;
-    feature4: string;
+    features: string[];
 }
 
 
@@ -38,14 +35,14 @@ export default function Pricing() {
 
             <div className="pricing__grid">
                 {plans.map((plan, index) => (
-                    <article className="pricing__grid-container" key={index}
+                    <article className="pricing__card" key={index}
                              style={plan.cost === 0 ? containerStyles.free : containerStyles.paid}>
 
                         <img className="pricing__icon" src={plan.icon} alt="" role="presentation"/>
 
-                        <div className="pricing__price-text">
+                        <div className="pricing__card-text">
                             <h3>{plan.header}</h3>
-                            <p>{plan.body}</p>
+                            <p className='pricing__card-body'>{plan.body}</p>
                         </div>
 
                         <div className="pricing__features">
@@ -56,22 +53,12 @@ export default function Pricing() {
                             <div>
 
                                 <ul className="pricing__features-list">
-                                    <li className="pricing__feature">
-                                        <CheckmarkIcon color={plan.cost === 0 ? '#3EE9E5': '#080C20'}/>
-                                        <p>{plan.feature1}</p>
-                                    </li>
-                                    <li className="pricing__feature">
-                                        <CheckmarkIcon color={plan.cost === 0 ? '#3EE9E5': '#080C20'}/>
-                                        <p>{plan.feature2}</p>
-                                    </li>
-                                    <li className="pricing__feature">
-                                        <CheckmarkIcon color={plan.cost === 0 ? '#3EE9E5': '#080C20'}/>
-                                        <p>{plan.feature3}</p>
-                                    </li>
-                                    <li className="pricing__feature">
-                                        <CheckmarkIcon color={plan.cost === 0 ? '#3EE9E5': '#080C20'}/>
-                                        <p>{plan.feature4}</p>
-                                    </li>
+                                    {plan.features.map((_feature, key) => (
+                                        <li key={key} className="pricing__feature">
+                                            <CheckmarkIcon color={plan.cost === 0 ? '#3ee9e5' : '#080c20'}/>
+                                            <p>{plan.features[key]}</p>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>

@@ -20,7 +20,7 @@ export default function Feature() {
                         <img className='features__icon' src={feature.icon} alt="" role="presentation"/>
                         <div className='features__feature-text'>
                             <h3>{feature.header}</h3>
-                            <p>{feature.body}</p>
+                            <p className='features__body'>{feature.body}</p>
                         </div>
                     </article>
                 ))}

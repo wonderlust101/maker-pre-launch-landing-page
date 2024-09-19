@@ -3,7 +3,7 @@
 .features {
   grid-area: 2/2;
   display: grid;
-  color: white;
+  color: a.$clr-neutrals-white;
   justify-content: center;
 
   &__grid {
@@ -72,5 +72,9 @@
   &__feature-text {
     display: grid;
     gap: 0.75rem;
+  }
+
+  &__body {
+    color: a.$clr-neutrals-grey;
   }
 }

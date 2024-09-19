@@ -4,12 +4,16 @@
   grid-area: 3/2;
   display: grid;
   gap: 3.5rem;
-  color: white;
+  color: a.$clr-neutrals-white;
 
   &__header-text {
     display: grid;
     gap: 1.75rem;
     text-align: center;
+  }
+
+  &__body {
+    color: a.$clr-neutrals-grey;
   }
 
   &__grid {
@@ -24,7 +28,7 @@
     }
   }
 
-  &__grid-container {
+  &__card {
     display: grid;
     gap: 2rem;
     position: relative;
@@ -44,9 +48,13 @@
     transform: translate(0, -50%);
   }
 
-  &__price-text {
+  &__card-text {
     display: grid;
     gap: 1rem;
+  }
+  
+  &__card-body {
+    opacity: 0.65;
   }
 
   &__features {

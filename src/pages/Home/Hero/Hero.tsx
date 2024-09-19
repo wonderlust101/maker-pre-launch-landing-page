@@ -11,7 +11,7 @@ export default function Hero() {
             <div className="hero__main-section">
                 <div className="hero__text">
                     <h1>Get paid for the work you <span className="hero__text--highlight">love</span> to do.</h1>
-                    <p>The 9-5 grind is so last century. We believe in living life on your own terms. Whether you’re
+                    <p className='hero__body'>The 9-5 grind is so last century. We believe in living life on your own terms. Whether you’re
                         looking to escape the rat race or set up a side hustle, we’ve got you covered.</p>
                 </div>
 

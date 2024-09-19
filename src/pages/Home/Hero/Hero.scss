@@ -42,7 +42,7 @@
     display: grid;
     justify-items: center;
     gap: 2rem;
-    color: white;
+    color: a.$clr-neutrals-white;
     text-align: center;
     
     @include a.breakpoint(medium) {
@@ -62,5 +62,9 @@
     &--highlight {
       color: a.$clr-primary-color-cyan;
     }
+  }
+  
+  &__body {
+    color: a.$clr-neutrals-grey;
   }
 }
